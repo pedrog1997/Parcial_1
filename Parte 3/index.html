@@ -68,6 +68,18 @@ Invoca la función para validar su funcionalidad.
 
 */
 
+function challenge1() {
+    var numeroDotones;
+    numeroDotones = prompt("Cuantos botones necesitas");
+
+    for (var i = 0; i < nombres.length; i++) {
+        var dummyDiv = document.getElementById("dummy");
+        var button = document.createElement("button");
+        button.textContent = nombres[i];
+        dummyDiv.appendChild(button);
+    }
+
+}
 
 
 
