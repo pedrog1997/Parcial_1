@@ -1,63 +1,73 @@
 header {
-
-
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
 h2 {
-
+  border-style: solid;
+  border-width: 1px;
 }
 
 .nav {
 
 
-  }
-
-  li {
-
-
-  }
-
-  .content{
-
 }
 
-  .aside {
+li {
+  border-style: solid;
+  border-width: 1px;
+  list-style-type: none;
+  margin: 20% 10%;
+}
 
-  }
+.content{
+  border-style: solid;
+  border-width: 1px;
+}
 
-  .slidebox{
+.aside {
+  border-style: solid;
+  border-width: 1px;  
+}
 
-   
-  }
+.slidebox{
+  border-style: solid;
+  border-width: 1px;
+  
+}
 
-  .article{
-
-  }
+.article{
+  
+}
 
 
 .poem{
-
+  border-style: solid;
+  border-width: 1px;
 }
 
-
-/*Device = Tablets, Ipads (portrait)
-  Screen = B/w 600px to 990px*/
-  @media (min-width:600px) and (max-width: 990px)  {
-    .article {
-
-  } 
-header{
-
-}
-}
 
 /*  Small devices    */
 @media (max-width:599px) {
 
-header,.content{
-
+  header,.content{
+    display: none;
+  }
 }
+
+/*Device = Tablets, Ipads (portrait)
+  Screen = B/w 600px to 990px*/
+@media (min-width:600px) and (max-width: 990px)  {
+    .article {
+
+  } 
+  header {
+
+  }
+}
+
+
 
 .nav {
 
