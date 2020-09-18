@@ -31,7 +31,18 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 
 // CREA TU FUNCION challenge1 aqui 
 
+function challenge1() {
+    var numeroDotones;
+    numeroDotones = prompt("Cuantos botones necesitas");
 
+    for (var i = 0; i < nombres.length; i++) {
+        var dummyDiv = document.getElementById("dummy");
+        var button = document.createElement("button");
+        button.textContent = nombres[i];
+        dummyDiv.appendChild(button);
+    }
+
+}
 
 // ************** PARTE 2    **************
 
@@ -42,7 +53,12 @@ Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los n
 
 // CREA TU FUNCION challenge2 2 aquí.
 
-
+function challenge2() {
+    for (var i = 0; i < nombres.length; i++) {
+        nombres[i] = nombres[i].toUpperCase();
+        console.log(nombres[i]);
+    }
+}
 
 // ************** PARTE 3    **************
 
@@ -58,6 +74,7 @@ A) Escribe un constructor que te permita generar objetos de tipo "Dog" que recib
 B) Utilizando el constructor crea 3 objectos con diferentes valores y escribe en consola cada objeto.
 
 
+
 *****BONUS**** 10  puntos
 
 Crea una método llamado printInfo()  que escriba en consola todas las propiedades del objeto que lo invoca. 
@@ -68,17 +85,23 @@ Invoca la función para validar su funcionalidad.
 
 */
 
-function challenge1() {
-    var numeroDotones;
-    numeroDotones = prompt("Cuantos botones necesitas");
-
-    for (var i = 0; i < nombres.length; i++) {
-        var dummyDiv = document.getElementById("dummy");
-        var button = document.createElement("button");
-        button.textContent = nombres[i];
-        dummyDiv.appendChild(button);
+function Dog(nombre, color, raza) {
+    this.nombre = nombre;
+    this.color = color;
+    this.raza = raza;
+    this.printInfo = function  {
+        console.log("Nombre: " + nombre + "Color: " + color + "Raza: " + raza);
     }
+} 
 
+    var dog1 = Dog("toby", "dorado", "labrador" );
+    var dog2 = Dog("Nicky", "dorado", "golden retriever");
+    var dog3 = Dog("Kira", "Color no definido", "Huerfano");
+
+function challenge3() {
+    dog1.printInfo();
+    dog2.printInfo();
+    dog3.printInfo();
 }
 
 
@@ -92,7 +115,7 @@ function challenge1() {
 
     <button onclick="challenge1()">Challenge 1</button>
     <button onclick="challenge2()">Challenge 2</button>
-    <button onclick="challenge3()">Challenge 2</button>
+    <button onclick="challenge3()">Challenge 3</button>
 
   
 <div id = "dummy">
