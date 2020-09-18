@@ -89,16 +89,16 @@ function Dog(nombre, color, raza) {
     this.nombre = nombre;
     this.color = color;
     this.raza = raza;
-    this.printInfo = function  {
+    this.printInfo = function print() {
         console.log("Nombre: " + nombre + "Color: " + color + "Raza: " + raza);
     }
 } 
 
+
+function challenge3() {
     var dog1 = Dog("toby", "dorado", "labrador" );
     var dog2 = Dog("Nicky", "dorado", "golden retriever");
     var dog3 = Dog("Kira", "Color no definido", "Huerfano");
-
-function challenge3() {
     dog1.printInfo();
     dog2.printInfo();
     dog3.printInfo();
