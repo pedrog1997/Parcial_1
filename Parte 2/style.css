@@ -47,6 +47,19 @@ li {
   border-width: 1px;
 }
 
+.nav {
+
+
+}
+
+
+.nav > li {
+
+}
+
+
+}
+
 
 /*  Small devices    */
 @media (max-width:599px) {
@@ -78,20 +91,37 @@ li {
   }
 }
 
-
-
-.nav {
-
-
+@media (min-width:990px) {
+  header {
+    float: center;
   }
 
+  nav {
+    clear: both;
+  }
 
-.nav > li {
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    margin: 30px;
+  }
+
+  .content {
+    display: flex;
+  }
+  
+  .article {
+    display: flex;
+  }
 
 }
 
 
-}
+
+
 
 
   
